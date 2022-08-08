@@ -1,0 +1,121 @@
+.create-op{
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 80px;
+    overflow: auto;
+    position: absolute;
+    top: 200px;
+    bottom: 60px;
+    max-width: 768px;
+}
+
+.create-op form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.create-op .form-control{
+ margin: 10px 0;
+}
+.create-op form .form-control input{
+    border-style: solid;    
+    border-color: #0f91ff;
+    border-width: 2px;
+    border-radius: 5PX;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+}
+
+
+
+
+.wrapper{
+    display: inline-flex;
+    background: #fff;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    padding: 20px 15px;
+  }
+  .wrapper .option{
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 10px;
+    border: 2px solid lightgrey;
+    transition: all 0.3s ease;
+  }
+  .wrapper .option .dot{
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+  }
+  .wrapper .option .dot::before{
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+  }
+  input[type="radio"]{
+    display: none;
+  }
+
+  .wrapper .option-1 .dot::before{
+    background: #65c37a;
+
+  }
+
+  .wrapper .option-2 .dot::before{
+    background: #ff8f8f;
+
+  }
+  
+  #option-1:checked:checked ~ .option-1{
+    border-color: #65c37a;
+    background: #65c37a;
+  }
+  
+  #option-2:checked:checked ~ .option-2{
+    border-color: #ff8f8f;
+    background: #ff8f8f;
+  }
+  #option-1:checked:checked ~ .option-1 .dot,
+  #option-2:checked:checked ~ .option-2 .dot{
+    background: #fff;
+  }
+  #option-1:checked:checked ~ .option-1 .dot::before,
+  #option-2:checked:checked ~ .option-2 .dot::before{
+    opacity: 1;
+    transform: scale(1);
+  }
+  .wrapper .option span{
+    font-size: 20px;
+    color: #808080;
+  }
+  #option-1:checked:checked ~ .option-1 span,
+  #option-2:checked:checked ~ .option-2 span{
+    color: #fff;
+  }

@@ -1,0 +1,33 @@
+.nav-bar{
+    background-color: #0f91ff;
+    width: 100%;
+    color: white;
+    display: flex;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    position:absolute;
+    bottom: 0;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.nav-bar .button{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar .button p{
+    font-size: 10px;
+}
+
