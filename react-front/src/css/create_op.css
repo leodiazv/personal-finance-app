@@ -119,3 +119,10 @@
   #option-2:checked:checked ~ .option-2 span{
     color: #fff;
   }
+
+  .create-op form .add-btn{
+    border-color: #0f91ff;
+    border-width: 2px;
+    color: white;
+    background-color: #0f91ff;
+  }

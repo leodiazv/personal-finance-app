@@ -48,7 +48,7 @@ const CreateOp = () => {
                         <span>EGRESO</span>
                     </label>
                 </div>
-                <button className='btn'>AGREGAR</button>
+                <button className='btn add-btn'>AGREGAR</button>
                 
 
             </form>
